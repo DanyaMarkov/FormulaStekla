@@ -194,14 +194,14 @@
             <h4>Выберите тип изделия</h4>
             
             <div class="item__choosetype">
-              <select class="custom-select" id="input-item-type">
+              <select class="custom-select" id="input-item-type" onchange="changeSelect()">
                 <option value="1" selected>Стекло</option>
                 <option value="2">Зеркало</option>
                 <option value="3">Лакобель</option>
               </select>
             </div>
             <div class="item__showimg">
-              <img src="https://зеркало-стекло.рф/wp-content/uploads/2018/07/obychnoe-prozrachnoe-steclo.jpg" alt="">
+              <img id="itemTypeImg" src="img/steklo.jpg" alt="">
             </div>
             
           </div>
@@ -232,13 +232,13 @@
           <div class="main__works works">
 
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="checkMontage">
+              <input class="form-check-input" type="checkbox" value="" id="checkMontage" onchange="changeSelect()">
               <label class="form-check-label" for="flexCheckDefault">
                 Услуга монтажников
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="checkDelivery">
+              <input class="form-check-input" type="checkbox" value="" id="checkDelivery" onchange="changeSelect()">
               <label class="form-check-label" for="flexCheckChecked">
                 Доставка
               </label>
@@ -247,7 +247,7 @@
 
             <div class="works__processing">
               <h4>Тип обработки</h4>
-              <select class="custom-select" id="processing-type">
+              <select class="custom-select" id="processing-type" onchange="changeSelect()">
                 <option value="1" selected>Механический</option>
                 <option value="2">Термический</option>
                 <option value="3">Химический</option>

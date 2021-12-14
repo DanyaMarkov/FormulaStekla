@@ -11,6 +11,7 @@ let summation = () => {
     let summ = 0;
 
     let itemType = document.getElementById('input-item-type');
+    let pic = document.getElementById('itemTypeImg');
 
     let s = Number(document.getElementById('S').value);
     let p = Number(document.getElementById('P').value);
@@ -30,12 +31,15 @@ let summation = () => {
     switch (selectedItemType) {
         case "Стекло":
             xItemType = 300;
+            pic.src = "img/steklo.jpg";
             break;
         case "Зеркало":
             xItemType = 500;
+            pic.src = "img/zerkalo.jpg";
             break;
         case "Лакобель":
             xItemType = 700;
+            pic.src = "img/lakobel.jpg";
             break;
     }
 
@@ -86,6 +90,10 @@ let summation = () => {
 
 //Вешаю события
 
+function changeSelect() {
+    calculate();
+}
+
 let s = document.getElementById("S");
 s.addEventListener("change", function () {
     calculate();
@@ -112,10 +120,16 @@ delivery.addEventListener("change", function () {
 });
 
 // //Не работает, надо переписывать под <SELECT></SELECT>
-// let itemType = document.getElementById("itemType");
+// let itemType = document.getElementById("input-item-type");
 // itemType.addEventListener("change", function () {
 //     calculate();
 // });
+
+
+// let changeItemType = () => {
+//     alert("hah");
+//     calculate();
+// }
 // //Не работает, надо переписывать под <SELECT></SELECT>
 // let processingType = document.getElementById("processingType");
 // processingType.addEventListener("change", function () {
