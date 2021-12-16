@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Формула стекла</title>
+    <meta name="description" content="" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg" />
+
+    <link rel="icon" href="img/favicon/logofav.ico" />
+
+    <!-- Template Basic Images End -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#E5E5E5" />
+    <meta name="msapplication-navbutton-color" content="#E5E5E5" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#E5E5E5" />
+    <!-- Custom Browsers Color End -->
+    <style>
+      body {
+        opacity: 0;
+        overflow-x: hidden;
+      }
+      html {
+        background-color: #e5e5e5;
+      }
+    </style>
+
+    <link rel="stylesheet" href="css/calculator.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="ishome">
+    <div id="my-page">
+      <div id="my-header">
+        <header class="site-header">
+          <div class="callback-container">
+            <div class="callback-before"></div>
+
+            <form class="callback-header-form">
+              <div class="success"><span>Спасибо за заявку!</span></div>
+
+              <input type="hidden" name="project_name" value="Автозапчасти" />
+              <input
+                type="hidden"
+                name="admin_email"
+                value="example@mail.com"
+              />
+              <input
+                type="hidden"
+                name="form_subject"
+                value="Заказан звонок с сайта Автозапчасти"
+              />
+              <div class="close">
+                <span>×</span>
+              </div>
+              <div class="formhead">Заказать звонок</div>
+              <label for="header-form-name">Как к вам обращаться?</label>
+              <input
+                id="header-form-name"
+                type="text"
+                name="Имя"
+                placeholder="Ваше имя"
+              />
+              <label for="header-form-phone">Номер телефона</label>
+              <input
+                id="header-form-phone"
+                type="tel"
+                name="Телефон"
+                placeholder="+7(XXX)XXX-XXXX"
+                required
+              />
+              <p>
+                Отправляя форму, я соглашаюсь с политикой обработки
+                <a class="personal" href="#">персональных данных</a>
+              </p>
+              <button class="call-button">ЗАКАЗАТЬ ЗВОНОК</button>
+            </form>
+          </div>
+
+          <div class="personal-container">
+            <div class="personal-before"></div>
+
+            <form class="personal-form">
+              <div class="personal-close">
+                <span>×</span>
+              </div>
+              <div class="formhead">
+                Соглашение на обработку<br />персональных данных
+              </div>
+              <p>
+                Если Вы разместили Ваши контактные данные на сайте
+                http://formula-stekla.ru, то Вы автоматически согласились на
+                дальнейшую передачу Ваших контактных данных менеджерам сайта и
+                Вы подтверждаете свое согласие на обработку компанией
+                персональных данных в соответствии с Федеральным законом №
+                152-ФЗ «О персональных данных» от 27.07.2006 года: сбор,
+                систематизацию, накопление, хранение, уточнение (обновление,
+                изменение), использование, передачу компаниям-партнерам
+                исключительно в целях обеспечения мобильности обратного
+                взаимодействия с Вами при решении вопросов, связанных с Вашим
+                обращением.
+              </p>
+              <p>
+                Мы гарантируем конфиденциальность получаемой информации.
+                Обработка персональных данных осуществляется в целях
+                эффективного исполнения заказов, договоров и иных обязательств,
+                принятых компанией.
+              </p>
+              <p>
+                Настоящее согласие распространяется на следующие Ваши
+                персональные данные: фамилия, имя и отчество, адрес электронной
+                почты, контактный телефон, платёжные реквизиты.
+              </p>
+              <p>
+                Срок действия согласия является неограниченным. Вы можете в
+                любой момент отозвать настоящее согласие, направив письменное
+                уведомления на адрес formula_stekla@mail.ru
+              </p>
+              <p>
+                Обращаем ваше внимание, что отзыв согласия на обработку
+                персональных данных влечёт за собой удаление Вашей учётной
+                записи с Интернет-сайта http://formula-stekla.ru, а также
+                уничтожение записей, содержащих ваши персональные данные, в
+                системах обработки персональных данных компании.
+              </p>
+            </form>
+          </div>
+
+          <div class="top-line">
+            <div class="container">
+              <div class="row">
+                <div class="col-3">
+                  <a href="#" class="logo"
+                    ><img src="img/logomain.png" alt="Формула стекла" />Формула стекла</a
+                  >
+                </div>
+                <div class="col">
+                  <div class="time">
+                    <img src="img/clock.svg" alt="" />
+                    ЧАСЫ РАБОТЫ:<br />пн-пт 9.00-18.00
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="mail">
+                    <img src="img/email.svg" alt="" />
+                    E-MAIL<br /><a href="#">formula_stekla@mail.ru</a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="phone">
+                    <img src="img/phone.svg" alt="" />
+                    ТЕЛЕФОН<br />+7(495) 617-04-29
+                  </div>
+                </div>
+                <div class="col">
+                  <a href="#" class="callback">ЗАКАЗАТЬ ЗВОНОК</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          ⠀ <br>
+          ⠀ <br>
+          ⠀ <br>
+
+          <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a href="index.html" class="nav-link" >Главная</a></li>
+              <li class="nav-item"><a href="calculator.html" class="nav-link active" aria-current="page">Калькулятор</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+           
+            </ul>
+          </header>
+
+        </header>
+      </div>
+
+
+      <div class="calculator container">
+        <div class="calculator__title">Калькулятор стоимости работ</div>
+        <div class="calculator__main main">
+          <div class="main__item item">
+            <h4>Выберите тип изделия</h4>
+            
+            <div class="item__choosetype">
+              <select class="custom-select" id="input-item-type" onchange="changeSelect()">
+                <option value="1" selected>Стекло</option>
+                <option value="2">Зеркало</option>
+                <option value="3">Лакобель</option>
+              </select>
+            </div>
+            <div class="item__showimg">
+              <img id="itemTypeImg" src="img/steklo.jpg" alt="">
+            </div>
+            
+          </div>
+          <div class="main__sizes">
+            <div class="main__sizesel">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">	S, м2</span>
+              </div>
+              <input id="S" value="10" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+          
+            <div class="main__sizesel">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">P, м	</span>
+              </div>
+              <input id="P" value="14" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="main__sizesel">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Кол-во	</span>
+              </div>
+              <input id="count" value="1" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+          </div>
+          <div class="main__works works">
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkMontage" onchange="changeSelect()">
+              <label class="form-check-label" for="flexCheckDefault">
+                Услуга монтажников
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkDelivery" onchange="changeSelect()">
+              <label class="form-check-label" for="flexCheckChecked">
+                Доставка
+              </label>
+            </div>
+
+
+            <div class="works__processing">
+              <h4>Тип обработки</h4>
+              <select class="custom-select" id="processing-type" onchange="changeSelect()">
+                <option value="1" selected>Механический</option>
+                <option value="2">Термический</option>
+                <option value="3">Химический</option>
+              </select>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="calculator__result">
+          <div>
+            <button type="button" class="btn btn-info" onclick="calculate()">Посчитать</button>
+
+          </div>
+          <div id="calculate-result">
+            Итого: 0 руб
+          </div>
+          
+        </div>
+      </div>
+
+
+    </div>
+           
+
+  </div>
+
+    <div class="top" title="Наверх"><i class="fa fa-angle-double-up"></i></div>
+    <script src="js/calc.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
