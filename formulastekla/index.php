@@ -157,7 +157,7 @@
                   <a href="#" class="callback">ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
                 <div class="col">
-                  <a href="#" class="callback">Калькулятор</a>
+                  <a href="#" class="btn btn-primary">Калькулятор</a>
                 </div>
               </div>
             </div>
