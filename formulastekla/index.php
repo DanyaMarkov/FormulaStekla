@@ -157,7 +157,7 @@
                   <a href="#" class="callback">ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
                 <div class="col">
-                  <a href="#" class="btn btn-primary">Калькулятор</a>
+                  <a href="#calc" class="btn btn-primary btn-calc">Калькулятор</a>
                 </div>
               </div>
             </div>
@@ -262,6 +262,92 @@
 
         <section class="services">
           <div class="container">
+
+          <!-- Калькулятор -->
+            <div class="calculator mycontainer" id="calc" style="display: none;">
+              <div class="calculator__title">Калькулятор стоимости работ</div>
+              <div class="calculator__main mymain">
+                <div class="main__item myitem">
+                  <h4>Выберите тип изделия</h4>
+                  
+                  <div class="item__choosetype">
+                    <select class="custom-select" id="input-item-type" onchange="changeSelect()">
+                      <option value="1" selected>Стекло</option>
+                      <option value="2">Зеркало</option>
+                      <option value="3">Лакобель</option>
+                    </select>
+                  </div>
+                  <div class="item__showimg">
+                    <img id="itemTypeImg" src="img/steklo.jpg" alt="">
+                  </div>
+                  
+                </div>
+                <div class="main__sizes">
+                  <div class="main__sizesel">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">	S, м2</span>
+                    </div>
+                    <input id="S" value="10" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                  </div>
+                  
+                
+                  <div class="main__sizesel">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">P, м	</span>
+                    </div>
+                    <input id="P" value="14" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+                  <div class="main__sizesel">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Кол-во	</span>
+                    </div>
+                    <input id="count" value="1" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+                </div>
+                <div class="main__works works">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkMontage" onchange="changeSelect()">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Услуга монтажников
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkDelivery" onchange="changeSelect()">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Доставка
+                    </label>
+                  </div>
+
+
+                  <div class="works__processing">
+                    <h4>Тип обработки</h4>
+                    <select class="custom-select" id="processing-type" onchange="changeSelect()">
+                      <option value="1" selected>Механический</option>
+                      <option value="2">Термический</option>
+                      <option value="3">Химический</option>
+                    </select>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="calculator__result">
+                <div>
+                  <button type="button" class="btn btn-info" onclick="calculate()">Посчитать</button>
+
+                </div>
+                <div id="calculate-result">
+                  Итого: 0 руб
+                </div>
+                
+              </div>
+            </div>
+      <!-- Калькулятор -->
+
+
             <h2 class="h2"><?php the_field("services_title")?></h2>
             <p class="services-text">
               <?php the_field("services_subtitile")?>

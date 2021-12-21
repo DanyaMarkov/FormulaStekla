@@ -186,7 +186,7 @@
         </header>
       </div>
 
-
+      <!-- Калькулятор -->
       <div class="calculator mycontainer">
         <div class="calculator__title">Калькулятор стоимости работ</div>
         <div class="calculator__main mymain">
@@ -268,7 +268,7 @@
           
         </div>
       </div>
-
+      <!-- Калькулятор -->
 
     </div>
            
