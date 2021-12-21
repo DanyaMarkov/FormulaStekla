@@ -40,7 +40,7 @@
             <form class="callback-header-form">
               <div class="success"><span>Спасибо за заявку!</span></div>
 
-              <input type="hidden" name="project_name" value="Автозапчасти" />
+              <input type="hidden" name="project_name" value="Формула Стекла" />
               <input
                 type="hidden"
                 name="admin_email"
@@ -49,7 +49,7 @@
               <input
                 type="hidden"
                 name="form_subject"
-                value="Заказан звонок с сайта Автозапчасти"
+                value="Заказан звонок с сайта Формула Стекла"
               />
               <div class="close">
                 <span>×</span>
@@ -157,7 +157,7 @@
                   <a href="#" class="callback">ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
                 <div class="col">
-                  <a href="#" class="callback">Меню</a>
+                  <a href="#" class="callback">Калькулятор</a>
                 </div>
               </div>
             </div>
@@ -199,8 +199,8 @@
                     <div class="col-7">
                       <img
                         id="img"
-                        src="<?php echo get_template_directory_uri()?>/img/mainpic.png"
-                        alt="Автозапчасти"
+                        src="<?php the_field("main_image")?>"
+                        alt="Формула Стекла"
                       />
                     </div>
                   </div>
@@ -219,12 +219,12 @@
           <form class="services-callback-form">
             <div class="success"><span>Спасибо за заявку!</span></div>
 
-            <input type="hidden" name="project_name" value="Автозапчасти" />
+            <input type="hidden" name="project_name" value="Формула Стекла" />
             <input type="hidden" name="admin_email" value="example@mail.com" />
             <input
               type="hidden"
               name="form_subject"
-              value="Новая заявка с сайта Автозапчасти"
+              value="Новая заявка с сайта Формула Стекла"
             />
             <div class="close">
               <span>×</span>
@@ -264,82 +264,42 @@
           <div class="container">
             <h2 class="h2"><?php the_field("services_title")?></h2>
             <p class="services-text">
-              <?php the_field("services_title")?>
+              <?php the_field("services_subtitile")?>
             </p>
+
             <div class="container services-container">
               <div class="row services-row">
-                <div class="col-lg-3 col-md-4 col-6 item">
-                  <div class="services-item">
-                    <div class="img-container">
-                      <div class="services-callback"></div>
-                      <div class="img"></div>
-                    </div>
-                    <p>Зеркала</p>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 item">
-                  <div class="services-item">
-                    <div class="img-container">
-                      <div class="services-callback"></div>
-                      <div class="img"></div>
-                    </div>
-                    <p>Двери</p>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 item">
-                  <div class="services-item">
-                    <div class="img-container">
-                      <div class="services-callback"></div>
-                      <div class="img"></div>
-                    </div>
-                    <p>Перегородки</p>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 item">
-                  <div class="services-item">
-                    <div class="img-container">
-                      <div class="services-callback"></div>
-                      <div class="img"></div>
-                    </div>
-                    <p>Душевые кабины</p>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 item">
-                  <div class="services-item">
-                    <div class="img-container">
-                      <div class="services-callback"></div>
-                      <div class="img"></div>
-                    </div>
-                    <p>Лестницы</p>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 item">
-                  <div class="services-item">
-                    <div class="img-container">
-                      <div class="services-callback"></div>
-                      <div class="img"></div>
-                    </div>
-                    <p>Столы</p>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 item">
-                  <div class="services-item">
-                    <div class="img-container">
-                      <div class="services-callback"></div>
-                      <div class="img"></div>
-                    </div>
-                    <p>Полы</p>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 item">
-                  <div class="services-item">
-                    <div class="img-container">
-                      <div class="services-callback"></div>
-                      <div class="img"></div>
-                    </div>
-                    <p>Фурнитура</p>
-                  </div>
-                </div>
+
+                <?php		
+                    global $post;
+
+                    $query = new WP_Query( [
+                      'posts_per_page' => 8,
+                      'category_name'  => 'uslugi'
+                    ] );
+
+                    if ( $query->have_posts() ) {
+                      while ( $query->have_posts() ) {
+                        $query->the_post();
+                        ?>
+                          <div class="col-lg-3 col-md-4 col-6 item">
+                            <div class="services-item">
+                              <div class="img-container">
+                                <div class="services-callback"></div>
+                                <div class="img" style="background-image: url(<?php the_field('services_image')?>); background-repeat: no-repeat; background-size: cover;"></div>
+                              </div>
+                              <p><?php the_title()?></p>
+                            </div>
+                          </div>
+                        <?php 
+                      }
+                    } else {
+                      // Постов не найдено
+                    }
+
+                    wp_reset_postdata(); // Сбрасываем $post
+                  ?>
+
               </div>
             </div>
           </div>
@@ -422,7 +382,7 @@
                   <input
                     type="hidden"
                     name="project_name"
-                    value="Автозапчасти"
+                    value="Формула Стекла"
                   />
                   <input
                     type="hidden"
@@ -432,7 +392,7 @@
                   <input
                     type="hidden"
                     name="form_subject"
-                    value="Новая заявка с сайта Автозапчасти"
+                    value="Новая заявка с сайта Формула Стекла"
                   />
                   <div class="column">
                     <label for="name">Как к вам обращаться?</label><br />
