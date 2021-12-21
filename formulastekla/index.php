@@ -278,7 +278,7 @@
                     </select>
                   </div>
                   <div class="item__showimg">
-                    <img id="itemTypeImg" src="img/steklo.jpg" alt="">
+                    <img id="itemTypeImg" src="<?php echo get_template_directory_uri()?>/img/steklo.jpg" alt="">
                   </div>
                   
                 </div>
