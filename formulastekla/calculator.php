@@ -187,10 +187,10 @@
       </div>
 
 
-      <div class="calculator container">
+      <div class="calculator mycontainer">
         <div class="calculator__title">Калькулятор стоимости работ</div>
-        <div class="calculator__main main">
-          <div class="main__item item">
+        <div class="calculator__main mymain">
+          <div class="main__item myitem">
             <h4>Выберите тип изделия</h4>
             
             <div class="item__choosetype">

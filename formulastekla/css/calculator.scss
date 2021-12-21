@@ -1,72 +1,72 @@
-.container {
-    max-width: 935px;
-    border: 0px solid #222;
-    margin: 0px auto;
+.mycontainer {
+  max-width: 935px;
+  border: 0px solid #222;
+  margin: 0px auto;
 }
 
 .calculator {
-    display: flex;
-    //align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    &__title {
-    }
+  display: flex;
+  //align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  &__title {
+  }
 
-    &__main {
-    }
+  &__main {
+  }
 
-    &__result {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        background-color: #ffffff;
-        button {
-            margin-right: 30px;
-        }
-    }
-}
-.main {
+  &__result {
     display: flex;
     align-items: center;
     flex-direction: row;
-
-    &__sizesel {
-        margin: 10px;
+    background-color: #ffffff;
+    button {
+      margin-right: 30px;
     }
+  }
+}
+.mymain {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 
-    &__item {
-        margin: 20px;
-    }
+  &__sizesel {
+    margin: 10px;
+  }
 
-    &__sizes {
-        margin: 20px;
-        display: flex;
-        flex-direction: column;
-        //justify-content: space-around;
-    }
+  &__item {
+    margin: 20px;
+  }
 
-    &__works {
-    }
+  &__sizes {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-around;
+  }
+
+  &__works {
+  }
 }
 
-.item {
-    display: flex;
-    //align-items: center;
-    flex-direction: column;
+.myitem {
+  display: flex;
+  //align-items: center;
+  flex-direction: column;
 
-    &__choosetype {
+  &__choosetype {
+  }
+
+  &__showimg {
+    img {
+      padding: 20px;
+      max-width: 250px;
+      max-height: 250px;
+
+      min-width: 250px;
+      min-height: 250px;
+
+      border-radius: 30px;
     }
-
-    &__showimg {
-        img {
-            padding: 20px;
-            max-width: 250px;
-            max-height: 250px;
-
-            min-width: 250px;
-            min-height: 250px;
-
-            border-radius: 30px;
-        }
-    }
+  }
 }
