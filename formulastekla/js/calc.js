@@ -42,15 +42,18 @@ let summation = () => {
   switch (selectedItemType) {
     case "Стекло":
       xItemType = 300;
-      pic.src = "img/steklo.jpg";
+      pic.src =
+        "http://co09443-wordpress-12.tw1.ru/wp-content/themes/formulastekla/img/steklo.jpg";
       break;
     case "Зеркало":
       xItemType = 500;
-      pic.src = "img/zerkalo.jpg";
+      pic.src =
+        "http://co09443-wordpress-12.tw1.ru/wp-content/themes/formulastekla/img/zerkalo.jpg";
       break;
     case "Лакобель":
       xItemType = 700;
-      pic.src = "img/lakobel.jpg";
+      pic.src =
+        "http://co09443-wordpress-12.tw1.ru/wp-content/themes/formulastekla/img/lakobel.jpg";
       break;
   }
 
