@@ -203,7 +203,10 @@
                       style="background-image: url(<?php the_field('services_image')?>); background-repeat: no-repeat; background-size: cover;">
                     </div>
                   </div>
-                  <p><?php the_title()?></p>
+                  <p>
+                    <?php the_title()?> <br>
+                    <span><a href="<?php the_field("service-link")?>">Подробнее</a></span>
+                  </p>
                 </div>
               </div>
               <?php 
