@@ -1,13 +1,13 @@
-const btnCalc = document.querySelector(".btn-calc");
-const blockCalc = document.querySelector(".calculator");
+// const btnCalc = document.querySelector(".btn-calc");
+// const blockCalc = document.querySelector(".calculator");
 
-btnCalc.addEventListener("click", () => {
-  if (blockCalc.style.display == "none") {
-    blockCalc.style.display = "flex";
-  } else {
-    blockCalc.style.display = "none";
-  }
-});
+// btnCalc.addEventListener("click", () => {
+//   if (blockCalc.style.display == "none") {
+//     blockCalc.style.display = "flex";
+//   } else {
+//     blockCalc.style.display = "none";
+//   }
+// });
 
 let calculate = () => {
   let summ = summation();
