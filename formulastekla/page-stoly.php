@@ -109,7 +109,7 @@
                 <a href="#" class="callback">ЗАКАЗАТЬ ЗВОНОК</a>
               </div>
               <div class="col">
-                <a href="#calc" class="btn btn-primary btn-calc">Калькулятор</a>
+                <a href="http://co09443-wordpress-12.tw1.ru/" class="btn btn-success">Домой</a>
               </div>
             </div>
           </div>
@@ -118,6 +118,7 @@
         ⠀ <br>
         ⠀ <br>
       </header>
+      <?php the_content()?>
     </div>
 
     <?php get_footer()?>
