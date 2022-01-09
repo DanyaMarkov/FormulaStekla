@@ -6,7 +6,7 @@
   
   
   Сылка на трек-доску: https://trello.com/b/auo8I2BP/formulastekla
-  Ссылка на сайт компании Формула Стекла: http://co09443-wordpress-12.tw1.ru/
+  # Ссылка на сайт компании Формула Стекла: http://co09443-wordpress-12.tw1.ru/
   
   # Участники
 
