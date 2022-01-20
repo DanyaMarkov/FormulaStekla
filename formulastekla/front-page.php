@@ -7,8 +7,10 @@
         <div class="callback-container">
           <div class="callback-before"></div>
 
-          <form class="callback-header-form">
+          <form class="callback-header-form" method="post" action="<?php echo admin_url('admin-ajax.php')?>">
             <div class="success"><span>Спасибо за заявку!</span></div>
+
+            <input type="hidden" name="action" value="my_action">
 
             <input type="hidden" name="project_name" value="Формула Стекла" />
             <input type="hidden" name="admin_email" value="example@mail.com" />
@@ -18,9 +20,9 @@
             </div>
             <div class="formhead">Заказать звонок</div>
             <label for="header-form-name">Как к вам обращаться?</label>
-            <input id="header-form-name" type="text" name="Имя" placeholder="Ваше имя" />
+            <input id="header-form-name" type="text" name="client_name" placeholder="Ваше имя" />
             <label for="header-form-phone">Номер телефона</label>
-            <input id="header-form-phone" type="tel" name="Телефон" placeholder="+7(XXX)XXX-XXXX" required />
+            <input id="header-form-phone" type="tel" name="client_phone" placeholder="+7(XXX)XXX-XXXX" required />
             <p>
               Отправляя форму, я соглашаюсь с политикой обработки
               <a class="personal" href="#">персональных данных</a>

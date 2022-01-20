@@ -6,20 +6,23 @@
               <h2 class="h2 h2-form">
                 Оставьте заявку и мы<br />с Вами свяжемся
               </h2>
-              <form class="callback-form">
+              <form class="callback-form" method="post" action="<?php echo admin_url('admin-ajax.php')?>">
                 <div class="success"><span>Спасибо за заявку!</span></div>
+
+                <input type="hidden" name="action" value="my_action">
+
                 <input type="hidden" name="project_name" value="Формула Стекла" />
                 <input type="hidden" name="admin_email" value="example@mail.com" />
                 <input type="hidden" name="form_subject" value="Новая заявка с сайта Формула Стекла" />
                 <div class="column">
                   <label for="name">Как к вам обращаться?</label><br />
-                  <input id="name" type="text" name="Имя" placeholder="Ваше имя" /><br />
+                  <input id="name" type="text" name="client_name" placeholder="Ваше имя" /><br />
                   <label for="phone">Номер телефона</label><br />
-                  <input id="phone" type="tel" name="Телефон" placeholder="+7(XXX)XXX-XXXX" required /><br />
+                  <input id="phone" type="tel" name="client_phone" placeholder="+7(XXX)XXX-XXXX" required /><br />
                   <label for="email">Электронный адрес</label><br />
-                  <input id="email" type="email" name="email" placeholder="e-mail" />
+                  <input id="email" type="email" name="client_email" placeholder="e-mail" />
                   <label for="message">Что вас интересует?</label><br />
-                  <textarea id="message" name="Сообщение" rows="8" placeholder="Ваш вопрос"></textarea>
+                  <textarea id="message" name="client_message" rows="8" placeholder="Ваш вопрос"></textarea>
                 </div>
                 <p>
                   Отправляя форму, я соглашаюсь с политикой обработки
