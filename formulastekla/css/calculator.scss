@@ -70,3 +70,32 @@
     }
   }
 }
+
+.btn-calc {
+  margin-top: -7px;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background: #000 -o-linear-gradient(338.67deg, #2e5c7d -11.87%, #559acb 96.88%);
+  background: #000 linear-gradient(111.33deg, #2e5c7d -11.87%, #559acb 96.88%);
+  padding: 15px 21px;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 30px;
+  position: absolute;
+  outline: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-calc:hover {
+  color: white !important;
+  text-decoration: none !important;
+  transform: scale(1.2);
+}

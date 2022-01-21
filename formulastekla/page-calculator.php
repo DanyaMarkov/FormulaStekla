@@ -109,7 +109,7 @@
                 <a href="#" class="callback">ЗАКАЗАТЬ ЗВОНОК</a>
               </div>
               <div class="col">
-                <a href="http://co09443-wordpress-12.tw1.ru/" class="btn btn-success">Главная</a>
+                <a href="http://co09443-wordpress-12.tw1.ru" class="btn-calc">Главная</a>
               </div>
             </div>
           </div>
