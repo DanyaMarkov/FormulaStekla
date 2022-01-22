@@ -1,0 +1,318 @@
+header {
+  background: #fff2e1;
+}
+
+.header {
+  background: #fff2e1;
+}
+
+.container {
+  left: 0px;
+  top: 0px;
+}
+
+.logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.logo__link {
+  margin: 20px 0px 20px 122px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: #113c49;
+}
+
+.logo__img {
+  width: 40px;
+}
+
+.title-with-text_allinone {
+  margin: 30px auto 0px auto;
+  width: 837px;
+}
+
+.title-with-text_about {
+  margin: 30px auto 0px auto;
+  width: 1050px;
+}
+
+.title-with-text_features {
+  margin: 160px auto 0px auto;
+  width: 888px;
+}
+
+.title-with-text__title {
+  text-align: center;
+  margin: 0px auto;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 180%;
+  color: #f48c06;
+}
+
+.title-with-text__text {
+  /* Skilline is one powerful online software suite that combines all the tools needed to run a successful school or office. */
+  margin: 0px auto;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 180%;
+  color: #696984;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards__body {
+  margin: 70px 0px 0px 0px;
+}
+
+.cards__item {
+  margin: 0px 60px 0px 60px;
+  width: 450px;
+  height: 430px;
+  left: 225px;
+  top: 1855px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+          box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: 20px;
+}
+
+.cards__picture img {
+  text-align: center;
+}
+
+.cards__circle {
+  margin: -60px auto;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: red;
+}
+
+.cards__circle img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.cards__title {
+  margin: 139px auto 0px auto;
+  width: 343px;
+  height: 90px;
+  left: 279px;
+  top: 1977px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  color: #2f327d;
+}
+
+.cards__text {
+  margin: 24px auto 0px auto;
+  width: 341px;
+  height: 144px;
+  left: 280px;
+  top: 2091px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+  /* or 36px */
+  text-align: center;
+  color: #696984;
+}
+
+.startingfor__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 80px auto auto auto;
+}
+
+.startingfor__block {
+  margin: 0px 50px 0px 50px;
+  padding: auto;
+  width: 500px;
+  height: 300px;
+  opacity: 1;
+  border: 0px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.startingfor__instructors {
+  background-color: #2f327d;
+  height: 100%;
+}
+
+.startingfor__video {
+  background-color: #5a1654;
+  height: 100%;
+}
+
+.startingfor__students {
+  background-color: #901010;
+  background-size: cover;
+  height: 100%;
+}
+
+.startingfor__title {
+  padding: 132px 0px 0px 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.startingfor__link_forinstructors {
+  width: 283px;
+  height: 80px;
+  left: 1169px;
+  top: 2948px;
+  opacity: 1;
+  border-radius: 80px;
+  border: 2px solid #ffffff;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  margin: 17px auto;
+  color: #ffffff;
+}
+
+.startingfor__link_forinstructors a {
+  display: inline-block;
+  vertical-align: middle;
+  top: 60%;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px 0px 0px 0px;
+}
+
+.startingfor__link_forstudents {
+  width: 283px;
+  height: 80px;
+  left: 1169px;
+  top: 2948px;
+  background: rgba(35, 189, 238, 0.9);
+  border-radius: 80px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  margin: 17px auto;
+  color: #ffffff;
+}
+
+.startingfor__link_forstudents a {
+  display: inline-block;
+  vertical-align: middle;
+  top: 60%;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px 0px 0px 0px;
+}
+
+.aboutinterface__row {
+  margin: 50px auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutinterface__picture {
+  width: 896px;
+  height: 522px;
+}
+
+.aboutinterface__infoblock {
+  margin: 0px 0px 0px 126px;
+}
+
+.infoblock__title {
+  width: 542px;
+  height: 128px;
+  left: 1192px;
+  top: 4328px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 160%;
+  /* or 64px */
+  color: #2f327d;
+}
+
+.infoblock__blockwithicons {
+  margin: 51px 0px 0px 0px;
+}
+
+.blockwithicons__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 40px 0px;
+}
+
+.blockwithicons__icon {
+  margin: 20px 42px 0px 0px;
+  width: 26.59px;
+  height: 26px;
+  background: #fbfbfb;
+  -webkit-box-shadow: 0px 15px 44px rgba(13, 15, 28, 0.12);
+          box-shadow: 0px 15px 44px rgba(13, 15, 28, 0.12);
+}
+
+.blockwithicons__text {
+  width: 443px;
+  height: 80px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 180%;
+  /* or 40px */
+  letter-spacing: 0.02em;
+  color: #696984;
+}
+/*# sourceMappingURL=style.css.map */
