@@ -204,10 +204,14 @@
                       style="background-image: url(<?php the_field('services_image')?>); background-repeat: no-repeat; background-size: cover;">
                     </div>
                   </div>
-                  <p>
-                    <?php the_title()?> <br>
-                    <span><a href="<?php the_field("service-link")?>">Подробнее</a></span>
-                  </p>
+                  <div class="service-info">
+                    <p style="text-align: center;">
+                      <?php the_title()?> <br>
+                      <span><a href="<?php the_field("service-link")?>"
+                          style="text-decoration: none !important;">Подробнее</a></span>
+                    </p>
+                  </div>
+
                 </div>
               </div>
               <?php 

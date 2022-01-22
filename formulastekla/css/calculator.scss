@@ -9,11 +9,6 @@
   //align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  &__title {
-  }
-
-  &__main {
-  }
 
   &__result {
     display: flex;
@@ -44,18 +39,12 @@
     flex-direction: column;
     //justify-content: space-around;
   }
-
-  &__works {
-  }
 }
 
 .myitem {
   display: flex;
   //align-items: center;
   flex-direction: column;
-
-  &__choosetype {
-  }
 
   &__showimg {
     img {
